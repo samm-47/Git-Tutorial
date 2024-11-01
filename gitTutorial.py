@@ -5,7 +5,7 @@ def remove_element(nums, val):
     if not isinstance(nums, list):
         raise TypeError("Expected 'nums' to be a list.")
     
-    if not nums:  # Check if the list is empty
+    if not nums: 
         return 0  # Return 0 if the list is empty
 
     write_index = 0  # Index to place non-val elements
@@ -21,7 +21,7 @@ def remove_element(nums, val):
     nums[:] = nums[:write_index]
 
     # Returning both the new length and the modified list
-    return write_index, nums[:write_index]  # Returns the new length and modified list
+    return write_index, nums[:write_index] 
 
 # Example usage
 nums_list = [3, 2, 2, 3, 4, 3, 5]
